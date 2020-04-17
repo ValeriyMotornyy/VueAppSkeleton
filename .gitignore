@@ -1,0 +1,9 @@
+.env
+tsconfig.json
+.vs/*
+.idea/*
+public/js/*
+public/*.js
+node_modules/*
+test/__coverage__/*
+coverage/
