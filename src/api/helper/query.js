@@ -4,18 +4,10 @@
 |-----------------------------------------------------------------------------------------------
 |
 | query-string - node query string builder
+| searchKey    - config params
 |
 */
 import queryBuilder from 'query-string';
-
-/*
-|-----------------------------------------------------------------------------------------------
-| Config
-|-----------------------------------------------------------------------------------------------
-|
-| query-string - node query string builder
-|
-*/
 import { searchKey } from '../config/api';
 
 /**
