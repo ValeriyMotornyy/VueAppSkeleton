@@ -25,7 +25,7 @@
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.0.0",
-    "@vue/test-utils": "^1.0.0-beta.29",
+    "@vue/test-utils": "^1.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.0.0",
     "babel-loader": "^8.0.6",
@@ -49,7 +49,7 @@
     "webpack-cli": "^3.3.2"
   },
   "scripts": {
-    "test": "jest --ci --testResultsProcessor='./node_modules/jest-junit-reporter' ",
+    "tests": "jest --ci --testResultsProcessor='./node_modules/jest-junit-reporter' ",
     "watch": "webpack --config scripts/development/webpack.config.js --watch",
     "server": "node server.js",
     "build:dev": "webpack --config scripts/development/webpack.config.js",

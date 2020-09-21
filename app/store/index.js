@@ -8,8 +8,8 @@
 | modules - collected vuex modules
 |
 */
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue     from 'vue';
+import Vuex    from 'vuex';
 import modules from '../tasks/import/store.js'
 
 Vue.use(Vuex);

@@ -21,6 +21,7 @@ export default {
          * Get user
          *
          * @param callback
+         * @param id
          * @returns {*|void}
          */
         read: (callback, id) => {
