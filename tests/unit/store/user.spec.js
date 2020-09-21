@@ -3,19 +3,19 @@
 | Test Modules
 |-----------------------------------------------------------------------------------------------
 |
-| Loading various modules required for the test
+| Loading various modules required for the tests
 |
 | Vuex           - vuex instance
-| createLocalVue - vue instance (test util)
-| mocks          - mock objects for current test
-| module         - store module to test
+| createLocalVue - vue instance (tests util)
+| mocks          - mock objects for current tests
+| module         - store module to tests
 |
 */
 import Vuex                from 'vuex';
-import { createLocalVue }  from '@vue/test-utils';
+import { createLocalVue }  from '@vue/tests-utils';
 import { user, users }     from '../../mocks/user.mock';
 import { token }           from '../../mocks/token.mock';
-import module              from '../../../src/store/modules/user.store';
+import module              from '../../../app/store/modules/user.store';
 
 // Instantiate Vue
 const localVue = createLocalVue();
@@ -27,7 +27,7 @@ localVue.use(Vuex);
 let store;
 
 // Mock dependency
-jest.mock('../../../src/api/users');
+jest.mock('../../../app/api/users');
 
 describe('Vuex Store User', () => {
 

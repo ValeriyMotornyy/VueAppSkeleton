@@ -50,10 +50,10 @@
   },
   "scripts": {
     "test": "jest --ci --testResultsProcessor='./node_modules/jest-junit-reporter' ",
-    "watch": "webpack --config tasks/development/webpack.config.js --watch",
+    "watch": "webpack --config scripts/development/webpack.config.js --watch",
     "server": "node server.js",
-    "build:dev": "webpack --config tasks/development/webpack.config.js",
-    "build:prod": "webpack --config tasks/production/webpack.config.js",
+    "build:dev": "webpack --config scripts/development/webpack.config.js",
+    "build:prod": "webpack --config scripts/production/webpack.config.js",
     "setup:dev": "npm i && cp .env.example .env && npm run build:dev",
     "setup:prod": "npm i && cp .env.example .env && npm run build:prod",
     "deploy:dev": "npm run setup:dev && npm run server",

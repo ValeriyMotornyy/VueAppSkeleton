@@ -3,18 +3,18 @@
 | Test Modules
 |-----------------------------------------------------------------------------------------------
 |
-| Loading various modules required for the test
+| Loading various modules required for the tests
 |
-| utils          - vue test util
-| TestComponent  - vue component to test
+| utils          - vue tests util
+| TestComponent  - vue component to tests
 | Vuex           - vuex instance
-| module         - store module to test
+| module         - store module to tests
 |
 */
-import { createLocalVue, shallowMount } from '@vue/test-utils';
-import TestComponent                    from '../../../../src/views/common/Spinner';
+import { createLocalVue, shallowMount } from '@vue/tests-utils';
+import TestComponent                    from '../../../../app/views/common/Spinner';
 import Vuex                             from 'vuex';
-import module                           from '../../../../src/store/modules/spinner.store.js';
+import module                           from '../../../../app/store/modules/spinner.store.js';
 
 // Instantiate Vue
 const localVue = createLocalVue();

@@ -1,4 +1,4 @@
-import { user, users } from '../../../test/mocks/user.mock';
+import { user, users } from '../../../tests/mocks/user.mock';
 
 export default {
 

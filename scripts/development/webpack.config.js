@@ -7,18 +7,15 @@
 |
 | Loading various modules required by webpack to bundle the project.
 |
-| path                      - provides utilities for working with file and directory paths
-| Dotenv                    - wraps node dotenv module to resolve when bundling a project
-| VueLoaderPlugin           - handles Vue Single-File Components (SFCs) when bundling a project
-| MinifyPlugin              - minify optimise specified files
+| path              - provides utilities for working with file and directory paths
+| Dotenv            - wraps node dotenv module to resolve when bundling a project
+| VueLoaderPlugin   - handles Vue Single-File Components (SFCs) when bundling a project
 |
 */
 require('dotenv').config();
-const path                         = require('path');
-const Dotenv                       = require('dotenv-webpack');
-const { VueLoaderPlugin }          = require('vue-loader');
-const MinifyPlugin                 = require('babel-minify-webpack-plugin');
-
+const path                = require('path');
+const Dotenv              = require('dotenv-webpack');
+const { VueLoaderPlugin } = require('vue-loader');
 
 /**
  * Webpack config
@@ -35,10 +32,10 @@ const MinifyPlugin                 = require('babel-minify-webpack-plugin');
 module.exports = {
 
     // Environment
-    mode: 'production',
+    mode: 'development',
 
     // Files to bundle
-    entry: ['./src/app.js'],
+    entry: ['./app/app.js'],
 
     // Output directory/file name
     output: {
@@ -66,6 +63,7 @@ module.exports = {
                         ]
                     }
                 },
+
             },
             {
                 test: /\.vue$/,
@@ -103,13 +101,10 @@ module.exports = {
         new Dotenv({
             path: path.resolve(__dirname, '../../.env')
         }),
-
-        // Babel minify plugin
-        new MinifyPlugin(),
     ],
 
     // FS module config
     node: {
         fs: 'empty'
-    }
+    },
 };

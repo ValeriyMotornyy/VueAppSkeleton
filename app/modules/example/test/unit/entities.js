@@ -3,16 +3,16 @@
 | Test Modules
 |-----------------------------------------------------------------------------------------------
 |
-| Loading various modules required for the test
+| Loading various modules required for the tests
 |
 | Vuex           - vuex instance
-| createLocalVue - vue instance (test util)
-| mocks          - mock objects for current test
-| module         - store module to test
+| createLocalVue - vue instance (tests util)
+| mocks          - mock objects for current tests
+| module         - store module to tests
 |
 */
 import Vuex                 from 'vuex';
-import { createLocalVue }   from '@vue/test-utils';
+import { createLocalVue }   from '@vue/tests-utils';
 import { entity, entities } from '../mocks/entities.mock';
 import module               from '../../store/entity.store';
 

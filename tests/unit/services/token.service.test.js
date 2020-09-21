@@ -1,7 +1,7 @@
-import { TokenService }                   from '../../../src/services/token.service';
+import { TokenService }                   from '../../../app/services/token.service';
 import { valid, invalid, expired, token } from '../../mocks/token.mock';
 
-// Clear tokens from local store after each test
+// Clear tokens from local store after each tests
 afterEach(() => { TokenService.clear(); });
 
 describe('TokenService', () => {

@@ -3,16 +3,16 @@
 | Test Modules
 |-----------------------------------------------------------------------------------------------
 |
-| Loading various modules required for the test
+| Loading various modules required for the tests
 |
 | Vuex           - vuex instance
-| createLocalVue - vue instance (test util)
-| module         - store module to test
+| createLocalVue - vue instance (tests util)
+| module         - store module to tests
 |
 */
 import Vuex               from 'vuex';
-import { createLocalVue } from '@vue/test-utils';
-import module             from '../../../src/store/modules/spinner.store.js';
+import { createLocalVue } from '@vue/tests-utils';
+import module             from '../../../app/store/modules/spinner.store.js';
 
 // Instantiate Vue
 const localVue = createLocalVue();
