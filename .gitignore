@@ -7,3 +7,4 @@ public/*.js
 node_modules/*
 test/__coverage__/*
 coverage/
+test-report.xml
