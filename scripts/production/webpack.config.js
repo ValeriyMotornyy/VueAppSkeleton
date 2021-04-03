@@ -106,6 +106,9 @@ module.exports = {
 
         // Babel minify plugin
         new MinifyPlugin(),
+
+        // Vue UI library loader
+        new VueLoaderPlugin(),
     ],
 
     // FS module config

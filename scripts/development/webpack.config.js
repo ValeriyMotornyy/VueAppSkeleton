@@ -101,6 +101,9 @@ module.exports = {
         new Dotenv({
             path: path.resolve(__dirname, '../../.env')
         }),
+
+        // Vue UI library loader
+        new VueLoaderPlugin(),
     ],
 
     // FS module config
